@@ -1,0 +1,70 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background: linear-gradient(to bottom, rgb(77, 195, 241), rgb(62, 177, 152));
+}
+
+.wrap {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  padding: 50px;
+  color: rgb(56, 56, 56);
+  text-align: center;
+  line-height: 30px;
+  font-weight: 800;
+}
+form {
+  background-color: white;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  background-color: white;
+}
+button {
+  display: inline-block;
+}
+
+ul > li a:link,
+ul > li a:visited {
+  color: rgb(143, 143, 143);
+  text-decoration: none;
+  font-size: 0.7em;
+}
+
+input {
+  width: 200px;
+  height: 25px;
+  padding: 5px;
+  margin: 4px;
+  border: none;
+  background-color: rgb(229, 248, 239);
+  color: rgb(119, 119, 119);
+  font-size: 12px;
+}
+
+.submit {
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(151, 214, 185);
+  border-radius: 20em;
+  width: 100px;
+  padding: 6px;
+  border-style: hidden;
+}
+
+.signUp {
+  margin-top: 10px;
+}

@@ -1,0 +1,16 @@
+ul {
+  list-style-type: none;
+}
+
+span {
+  padding-right: 1rem;
+}
+
+button {
+  border: none;
+  color: rgb(123, 180, 36);
+  background-color: transparent;
+}
+button:hover {
+  cursor: pointer;
+}
