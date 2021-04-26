@@ -17,6 +17,14 @@ function saveToFinished() {
     localStorage.setItem(FINISHED_LS, JSON.stringify(finished));
 }
 
+function removeList(event) {
+
+}
+
+function moveToFin(event) {
+
+}
+
 function addTask(text) {
     const li = document.createElement("li");
     const finBtn = document.createElement("button");
@@ -40,6 +48,10 @@ function addTask(text) {
     };
     pendings.push(pendingObj);
     saveToPending();
+
+    // change status
+    delbtn.addEventListener('click', removeList);
+    finBtn.addEventListener('click', moveToFin);
 }
 
 function addFinished(text) {
