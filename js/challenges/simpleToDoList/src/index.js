@@ -25,6 +25,7 @@ function removeList(event) {
     
         // remove an target element and local storage data
         ul.removeChild(li);
+        li.removeChild(btn);
         const index = parseInt(li.id);
         dataArr.splice(index, 1);
 
@@ -50,11 +51,15 @@ function removeList(event) {
 }
 
 function moveToFin(event) {
-
+    const text = event.target.parentNode.firstChild.innerText;
+    removeList(event);
+    addFinished(text);
 }
 
 function moveToPending(event) {
-
+    const text = event.target.parentNode.firstChild.innerText;
+    removeList(event);
+    addTask(text);
 }
 
 function addTask(text) {
@@ -112,7 +117,7 @@ function addFinished(text) {
 
     // change status
     delbtn.addEventListener('click', removeList);
-    delbtn.addEventListener('click', moveToPending);
+    pendingBtn.addEventListener('click', moveToPending);
 }
 
 function handleSubmit(event) {
