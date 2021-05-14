@@ -14,7 +14,6 @@
         autoplay: true,
         loop: true,
         playList: 'An6LvWQuj_8',
-        disablekb: true,
       },
       events: {
         onReady: function(event) {
